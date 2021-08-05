@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Snake Case Study</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url(/image/Free-vector-000460-thuc-te-bau-troi-xanh-nen.jpg)
+            
+            
+        }
+        #canvas{
+            background-image: url(/image/bac.jpg);
+            width: 500px;
+            height: 500px;
+            background-size: cover;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Nguyễn Võ Ngọc Case Study</h1>
+    <h2> Score: <p id="score"></p></h2> <h2>Top 1 Score: <p id="maxscore"></p></h2>
+    <p>
+        ← Left   →  Right  <br>
+        ↑  Up  ↓  Down<br> 
+    </p>
+    <canvas id="canvas" tabindex="0"  style="margin:0px; border: 1px solid"> </canvas>
+    <script src="snake.js"></script>
+    <script src="Game.js"></script>
+    <script type='text/javascript'>
+    window.onload = function()
+    {
+        var game = new Game("canvas");
+        game.init();
+    }
+    </script>
+</body>
+</html>
